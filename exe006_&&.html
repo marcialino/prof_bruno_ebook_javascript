@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JS</title>
+</head>
+<body>
+    <h1>Operadores && (e) e ||(ou)</h1>
+
+    <script>
+        var energia =90
+        var velocidade
+        var pontuacao = 70
+
+        if((energia >80)&&(energia <=100)){
+            document.write("<p style='color:#0B0CFF'>Energia alta </p> <br>")
+            velocidade = 1100
+        }else if((energia>60)&&(energia <=80)){
+            document.write("<p style='color:#5A14FF'>Energia boa</p><br>")
+            velocidade =80
+        }else if((energia >40)&&(energia<=60)){
+            document.write("<p style='color:#02CF17'>Energia média </p><br>")
+            velocidade = 60
+        }else if((energia >20)&&(energia <=60)){
+            document.write("<p style='color:#B8AB0B'>Energia baixa </p><br>")
+            velocidade = 40
+        }else if((energia >1)&&(energia<=20)){
+            document.write("<p style='color:#E0AB0B'>Energia crítica </p><br>")
+            velocidade = 20
+        }else{
+            document.write("<p style='color:#F00'>Jogador morto</p><br>")
+            velocidade=0
+        }
+      
+        if((pontuacao < 34)||(pontuacao > 66)){
+            document.write('O jogador é ganhador!')
+        }else if((pontuacao >=34)||(pontuacao<=65)){
+            document.write('Jogador é perdedor!')
+        }
+           
+    </script>
+</body>
+</html>
