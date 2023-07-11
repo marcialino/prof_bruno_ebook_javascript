@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de JS</title>
+</head>
+<body>
+    <h1>IF Aninhados</h1>
+
+    <script>
+        var nota = 79
+
+        if(nota < 40){
+            document.write('Reprovado com louvor')
+        }else{
+            if(nota < 60){
+                document.write('Reprovado com nota baixa')
+            }else{
+                if((nota >60) && (nota < 80)){
+                    document.write('Aprovado com nota normal')
+                }else{
+                    document.write('Aprovado com louvor')
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>
